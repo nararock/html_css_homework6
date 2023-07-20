@@ -196,7 +196,7 @@ body{
 .grid__product{
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    grid-template-rows: 586px;
+    grid-template-rows: 586px 586px;
     grid-auto-flow: row;
     gap: 30px;
 }
