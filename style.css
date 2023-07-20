@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Lato;
+}
+
+.header{
+    background-color: #222;
+}
+
+.center{
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.header__logo{
+    width: 44px;
+    height: 38px;
+    flex-shrink: 0;
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
+.header__search{
+    margin-top: 28px;
+    margin-bottom: 20px;
+}
+
+.flex__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right__header{
+    width: 158.996px;
+    height: 29px;
+    flex-shrink: 0;
+    margin-top: 26px;
+    margin-bottom: 20px;
+}
+
+.left__header{
+    display:flex;
+    justify-content: space-between;
+    gap: 41px;
+}
+
+.cover{
+    background-color: #F1E4E6;
+    margin-bottom: 65px;
+}
+
+.image_cover{
+    width: 50%;
+    height: 764px;
+    text-align: center;
+}
+
+.flex__cover {
+    display: flex;
+    align-items: center;
+}
+
+.foto__model{
+   margin-bottom: 0;
+   height: 764px;
+}
+
+.title__cover{
+    color: #222;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.subtitle__cover{
+    color: #222;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.subtitle__pink{
+    color: #F16D7F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.flex__heading {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.heading__cover{
+    margin-left: 63px;
+}
+
+.item__content{
+    position: relative;
+}
+
+.text__content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 14;
+    background: rgba(33, 22, 22, 0.7);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text__content:hover{
+    background: rgba(231, 169, 169, 0.2);
+}
+
+
+.first__content{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 260px 180px;
+    grid-auto-flow: row;
+    gap: 30px;
+    margin-bottom: 96px;
+}
+
+.horisontal{
+    grid-column: span 3;
+}
+
+.text__pink{
+    color: #F16D7F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text__block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+}
+
+.long__block{
+    margin-top: 65px;
+}
+
+.second__title{
+    color: #222;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title__text{
+    color: #9F9F9F;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flex__second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.second__heading{
+    margin-bottom: 48px;
+}
+
+.product__block{
+    background-color: #F8F8F8;
+}
+
+.grid__product{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 586px;
+    grid-auto-flow: row;
+    gap: 30px;
+}
+
+.title__description{
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__foto{
+    margin-bottom: 25px;
+}
+
+.product__description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.text__description{
+    color: #5D5D5D;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 314px;
+}
+
+.price{
+    color: #F16D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__board{
+    margin-bottom: 48px;
+}
+
+.button__browse{
+    color: #F26376;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    border-color: #F26376;
+    padding: 15px 39px 14px 39px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.button__browse:hover{
+    color: #FFF;
+    background-color: #F26376;
+}
+
+.button__block{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+
