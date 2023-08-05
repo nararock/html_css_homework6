@@ -441,6 +441,7 @@ img{
     border: none;
     border-radius: 25px 0 0 25px;
     padding-left: 22px;
+    padding-right: 22px;
 }
 
 .prefooter__button{
