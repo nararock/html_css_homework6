@@ -1,0 +1,85 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center {
+        @include center(368px);
+    }
+
+    .product__board {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .first__content {
+        gap: 19px;
+        margin-bottom: 109px;
+    }
+
+    .cover {
+        @include center(384px);
+    }
+
+    .center__header {
+        @include center(352px);
+    }
+
+    .title__cover {
+        font-size: 44px;
+    }
+
+    .subtitle__cover {
+        font-size: 24px;
+    }
+
+    .subtitle__pink {
+        font-size: 24px;
+    }
+
+    .heading__cover {
+        margin-left: 39px;
+    }
+
+    .text__block {
+        margin-top: 58px;
+    }
+
+    .long__block {
+        margin-top: 33px;
+    }
+
+    .button__block {
+        margin-bottom: 70px;
+    }
+
+    .dark__content {
+        flex-direction: column;
+        gap: 48px;
+        padding-bottom: 64px;
+        padding-top: 48px;
+    }
+
+    .dark__text {
+        width: 65%;
+    }
+
+    .prefooter__content {
+        background-image: url(img/prefooter_fonTablet.png);
+        background-position: bottom;
+        background-size: cover;
+        @include flex1(column, center);
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .prefooter__block {
+        width: 52%;
+    }
+
+    .header__block {
+        margin-bottom: 27px;
+        @include flex1(column, center);
+    }
+
+    .footer {
+        @include flex2(row, center, space-between, 305px);
+    }
+}

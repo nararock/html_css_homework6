@@ -1,0 +1,187 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .center {
+        @include center(179px);
+    }
+
+    .center__header {
+        @include center(179px);
+    }
+
+    .image__cover {
+        display: none;
+    }
+
+    .right__header {
+        display: none;
+    }
+
+    .right__headerMobile {
+        display: block;
+        margin-top: 25px;
+        margin-bottom: 26px;
+        margin-right: 16px;
+    }
+
+    .left__header {
+        margin-left: 16px;
+    }
+
+    .title__cover {
+        font-size: 38px;
+    }
+
+    .subtitle__cover {
+        font-size: 20px;
+    }
+
+    .subtitle__pink {
+        font-size: 20px;
+    }
+
+    .heading__cover {
+        margin-top: 148px;
+        margin-bottom: 149px;
+    }
+
+    .title__block {
+        margin-top: 0;
+    }
+
+    .first__content {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .image__content1,
+    .image__content2,
+    .image__content3,
+    .image__content4 {
+        display: none;
+    }
+
+    .long__block {
+        margin-top: 30px;
+    }
+
+    .flex__second {
+        gap: 3px;
+    }
+
+    .second__heading {
+        margin-bottom: 64px;
+    }
+
+    .product__board {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .button__block {
+        margin-bottom: 85px;
+    }
+
+    .item__content {
+        background-position: top;
+        background-size: cover;
+        height: 247px;
+    }
+
+    .content1 {
+        background-image: url(../img/foto_content1.png);
+    }
+
+    .content2 {
+        background-image: url(../img/foto_content2.png);
+    }
+
+    .content3 {
+        background-image: url(../img/foto_content3.png);
+    }
+
+    .horisontal {
+        background-image: url(../img/foto_content4.png);
+        height: 111px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .dark__content {
+        flex-direction: column;
+        gap: 46px;
+        padding-bottom: 81px;
+        padding-top: 48px;
+    }
+
+    .dark__text {
+        width: 85%;
+    }
+
+    .dark__icon1 {
+        margin-bottom: 27px;
+    }
+
+    .dark__icon2 {
+        margin-bottom: 18px;
+    }
+
+    .dark__icon3 {
+        margin-bottom: 24px;
+    }
+
+    .dark__subtitle {
+        margin-bottom: 14px;
+    }
+
+    .prefooter__content {
+        background-image: url(img/prefooter_fonTablet.png);
+        background-position: bottom;
+        background-size: cover;
+        @include flex1(column, center);
+        gap: 59px;
+        padding-top: 64px;
+        padding-bottom: 109px;
+    }
+
+    .prefooter__block {
+        width: 80%;
+    }
+
+    .prefooter__text {
+        font-size: 18px;
+    }
+
+    .header__block {
+        margin-bottom: 24px;
+    }
+
+    .prefooter__subtitle {
+        font-size: 14px;
+    }
+
+    .prefooter__input {
+        height: 46px;
+    }
+
+    .prefooter__button {
+        height: 46px;
+    }
+
+    .prefooter__image {
+        height: 91px;
+    }
+
+    .footer {
+        @include flex1(column-reverse, center);
+        gap: 40px;
+        padding-top: 43px;
+        padding-bottom: 9px;
+    }
+
+    .footer__content {
+        margin: 0;
+    }
+}

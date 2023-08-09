@@ -1,0 +1,114 @@
+.postheader {
+    background-color: #F8F3F4;
+    padding-top: 59px;
+    padding-bottom: 60px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .postheader__header {
+            @include font($ColorSelection, 24px, 400);
+        }
+
+        .breadcrumbs__link {
+            text-decoration: none;
+            @include font(#636363, 14px, 300);
+        }
+
+        .breadcrumb__select {
+            @include font($ColorSelection, 14px, 700);
+        }
+    }
+}
+
+.product {
+    background-color: #F7F7F7;
+    padding-top: 11px;
+    padding-bottom: 42px;
+    border: 1px solid #EAEAEA;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &__leftarrow,
+    &__rightarrow {
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-color: #FFF;
+        @include flex1($flex-direction, $align-items);
+        border: 1px solid #EAEAEA;
+        position: absolute;
+        top: 712px;
+        left: 230px;
+        right: 230px;
+
+        .info__subtitle {
+            margin-bottom: 12px;
+            @include font($ColorSelection, 14px, 300);
+        }
+
+        .info__shortborder {
+            margin-bottom: 12px;
+        }
+
+        .info__title {
+            margin-bottom: 48px;
+            @include font(#4D4D4D, 18px, 300);
+        }
+
+        .info__description {
+            margin-bottom: 32px;
+            @include font(#5E5E5E, 14px, 300);
+            text-align: center;
+            padding-left: 293px;
+            padding-right: 293px;
+        }
+
+        .info__price {
+            margin-bottom: 65px;
+            @include font(#EF5B70, 24px, 300);
+        }
+
+        .info__longborder {
+            margin-bottom: 65px;
+        }
+
+        .product__property {
+            margin-bottom: 48px;
+            @include flex2(row, $align-items, $justifycontent, 42px);
+
+            .property__element {
+                @include flex2(row, $align-items, $justifycontent, 9px);
+            }
+
+        }
+
+        .info__button {
+            @include font(#F26376, 16px, 400);
+            background-color: #FFF;
+            border: 1px solid $ColorSelection;
+            @include flex2(row, $align-items, $justifycontent, 22px);
+            padding: 15px 57px 9px 24px;
+        }
+    }
+}
+
+.another__products {
+    margin-top: 664px;
+    @include flex2(row, $align-items, $justifycontent, $gap);
+    margin-bottom: 128px;
+}
