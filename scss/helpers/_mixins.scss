@@ -24,5 +24,11 @@
     flex-direction: $flex-direction;
     align-items: $align-items;
     justify-content: $justifycontent;
+
+}
+
+@mixin flex3 ($flex-direction, $gap) {
+    display: flex;
+    flex-direction: $flex-direction;
     gap: $gap;
 }

@@ -12,6 +12,10 @@ body {
     font-family: $fontfamily;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
 }
@@ -407,3 +411,4 @@ img {
 @import 'tabletVersion';
 @import 'mobileVersion';
 @import 'productStyle';
+@import 'catalogStyle';
