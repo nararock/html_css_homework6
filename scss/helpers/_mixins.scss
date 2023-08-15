@@ -24,7 +24,7 @@
     flex-direction: $flex-direction;
     align-items: $align-items;
     justify-content: $justifycontent;
-
+    gap: $gap;
 }
 
 @mixin flex3 ($flex-direction, $gap) {

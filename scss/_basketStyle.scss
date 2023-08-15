@@ -1,0 +1,196 @@
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+.basket__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 96px;
+    justify-content: space-between;
+    margin-top: 96px;
+    margin-bottom: 128px;
+
+    .basket__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 58%;
+    }
+
+    .basket__info {
+        @include flex3(column, 57px);
+        width: 32%;
+
+        .basket__form {
+            @include flex3(column, 20px);
+
+            .form__heading {
+                padding-top: 17px;
+                @include font(#222, 16px, 300);
+            }
+
+            .form__input {
+                height: 45px;
+                padding-left: 16px;
+                border: 1px solid #A4A4A4;
+                font-family: Lato;
+
+
+                .form__input::-webkit-input-placeholder {
+                    @include font(#222, 13px, 300);
+
+                }
+
+                .input__country::-webkit-input-placeholder {
+                    color: #B1B1B1;
+                }
+            }
+
+
+            .form__button {
+                height: 35px;
+                width: 101px;
+                background-color: #fff;
+                border: 1px solid #A4A4A4;
+                @include font(#4A4A4A, 11px, 300);
+                font-family: Lato;
+            }
+
+            .form__button:hover {
+                background-color: $ColorSelection;
+                color: #fff;
+                border: none;
+            }
+        }
+
+        .total {
+            display: flex;
+            flex-direction: column;
+            background-color: #F5F3F3;
+            padding: 39px 34px 42px 44px;
+
+            .total__subtitle {
+                margin-bottom: 12px;
+                @include font(#4A4A4A, 11px, 400);
+                margin-left: 174px;
+
+                .subtitle__price {
+                    padding-left: 15px;
+                }
+            }
+
+            .total__title {
+                margin-bottom: 21px;
+                @include font(#222, 16px, 300);
+                margin-left: 109px;
+
+                .title__price {
+                    @include font(#F16D7F, 16px, 700);
+                    padding-left: 15px;
+                }
+            }
+
+            .total__line {
+                margin-bottom: 17px;
+            }
+
+            .total__button {
+                height: 50px;
+                background-color: #F16D7F;
+                @include font(#FFF, 16px, 300);
+                border: none;
+                font-family: Lato;
+            }
+
+            .total__button:hover {
+                background-color: #fff;
+                color: #4A4A4A;
+                border: 1px solid #4A4A4A;
+            }
+        }
+    }
+
+    .basket__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 32px;
+
+        .basket__button {
+            width: 225px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #A4A4A4;
+            @include font(#000, 14px, 300);
+            font-family: Lato;
+        }
+
+        .basket__button:hover {
+            background-color: $ColorSelection;
+            color: #FFF;
+            border: none;
+        }
+    }
+}
+
+.card__item {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 10px 15px 15px #EAEAEA;
+
+    .card__description {
+        display: flex;
+        flex-direction: column;
+        margin: 22px 97px 62px 31px;
+        position: relative;
+
+        .card__heading {
+            @include font(#222, 24px, 400);
+            margin-bottom: 42px;
+            width: 262px;
+        }
+
+        .card__cross {
+            position: absolute;
+            left: 328px;
+            top: 7px;
+        }
+
+        .card__cross:hover {
+            transform: scale(1.5, 1.5);
+        }
+
+        .card__info {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+
+            .info__field {
+                @include font(#575757, 22px, 400);
+
+            }
+
+            .quantity__field {
+                @include flex3(row, 24px);
+                align-items: center;
+            }
+
+            .price__field {
+                @include font(#EF5B70, 22px, 400);
+            }
+
+            .desription__field {
+                @include font(#6F6E6E, 22px, 400);
+            }
+
+            .card__input {
+                width: 44px;
+                height: 24px;
+                text-align: center;
+                @include font(#656565, 18px, 400);
+                border: 1px solid #EAEAEA;
+            }
+        }
+    }
+}

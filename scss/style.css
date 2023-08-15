@@ -238,6 +238,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  gap: 11px;
   border: #FFFFFF 1px solid;
   padding-top: 11px;
   padding-bottom: 8px;
@@ -314,6 +315,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .dark__block {
@@ -364,6 +366,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 322px;
 }
 
 .prefooter__background {
@@ -463,6 +466,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 655px;
 }
 
 .footer__content {
@@ -480,6 +484,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 7px;
 }
 
 .icons {
@@ -575,6 +580,7 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    gap: 305px;
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -845,12 +851,14 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 42px;
 }
 .product__info .product__property .property__element {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 9px;
 }
 .product__info .info__button {
   color: #F26376;
@@ -864,6 +872,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 22px;
   padding: 15px 57px 9px 24px;
 }
 
@@ -873,6 +882,7 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
   margin-bottom: 128px;
 }
 
@@ -989,7 +999,6 @@ summary::-webkit-details-marker {
 .sort__item .sort__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 9px;
   margin-top: 5px;
   width: 79px;
@@ -1010,11 +1019,13 @@ summary::-webkit-details-marker {
   line-height: normal;
   font-family: Roboto;
 }
-.sort .swiper {
+
+.swiper {
   width: 100%;
   height: 100%;
 }
-.sort .swiper-slide {
+
+.swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -1022,14 +1033,16 @@ summary::-webkit-details-marker {
   justify-content: center;
   align-items: center;
 }
-.sort .swiper-slide img {
+
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sort .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   width: 20px;
   height: 20px;
   text-align: center;
@@ -1039,7 +1052,245 @@ summary::-webkit-details-marker {
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
 }
-.sort .swiper-pagination-bullet-active {
+
+.swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
+}
+
+.swiper-pagination-bullet-active {
+  background: unset;
+  color: #EF5B70;
+}
+
+.swiper-pagination-bullet {
+  border-radius: unset;
+  background: unset;
+  opacity: unset;
+  color: #C4C4C4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.basket__content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 96px;
+  justify-content: space-between;
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+.basket__content .basket__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 58%;
+}
+.basket__content .basket__info {
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+  width: 32%;
+}
+.basket__content .basket__info .basket__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.basket__content .basket__info .basket__form .form__heading {
+  padding-top: 17px;
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.basket__content .basket__info .basket__form .form__input {
+  height: 45px;
+  padding-left: 16px;
+  border: 1px solid #A4A4A4;
+  font-family: Lato;
+}
+.basket__content .basket__info .basket__form .form__input .form__input::-webkit-input-placeholder {
+  color: #222;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.basket__content .basket__info .basket__form .form__input .input__country::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+.basket__content .basket__info .basket__form .form__button {
+  height: 35px;
+  width: 101px;
+  background-color: #fff;
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Lato;
+}
+.basket__content .basket__info .basket__form .form__button:hover {
+  background-color: #F16D7F;
+  color: #fff;
+  border: none;
+}
+.basket__content .basket__info .total {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F3F3;
+  padding: 39px 34px 42px 44px;
+}
+.basket__content .basket__info .total .total__subtitle {
+  margin-bottom: 12px;
+  color: #4A4A4A;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 174px;
+}
+.basket__content .basket__info .total .total__subtitle .subtitle__price {
+  padding-left: 15px;
+}
+.basket__content .basket__info .total .total__title {
+  margin-bottom: 21px;
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-left: 109px;
+}
+.basket__content .basket__info .total .total__title .title__price {
+  color: #F16D7F;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 15px;
+}
+.basket__content .basket__info .total .total__line {
+  margin-bottom: 17px;
+}
+.basket__content .basket__info .total .total__button {
+  height: 50px;
+  background-color: #F16D7F;
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  font-family: Lato;
+}
+.basket__content .basket__info .total .total__button:hover {
+  background-color: #fff;
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+}
+.basket__content .basket__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.basket__content .basket__buttons .basket__button {
+  width: 225px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #A4A4A4;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: Lato;
+}
+.basket__content .basket__buttons .basket__button:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+  border: none;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 15px 15px #EAEAEA;
+}
+.card__item .card__description {
+  display: flex;
+  flex-direction: column;
+  margin: 22px 97px 62px 31px;
+  position: relative;
+}
+.card__item .card__description .card__heading {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 42px;
+  width: 262px;
+}
+.card__item .card__description .card__cross {
+  position: absolute;
+  left: 328px;
+  top: 7px;
+}
+.card__item .card__description .card__cross:hover {
+  transform: scale(1.5, 1.5);
+}
+.card__item .card__description .card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card__item .card__description .card__info .info__field {
+  color: #575757;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card__item .card__description .card__info .quantity__field {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+.card__item .card__description .card__info .price__field {
+  color: #EF5B70;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card__item .card__description .card__info .desription__field {
+  color: #6F6E6E;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card__item .card__description .card__info .card__input {
+  width: 44px;
+  height: 24px;
+  text-align: center;
+  color: #656565;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: 1px solid #EAEAEA;
 }/*# sourceMappingURL=style.css.map */
