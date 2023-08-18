@@ -1294,4 +1294,148 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 400;
   line-height: normal;
   border: 1px solid #EAEAEA;
+}
+
+.registration {
+  display: flex;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  justify-content: space-between;
+}
+.registration-form {
+  width: 32%;
+}
+.registration-form__form {
+  display: flex;
+  flex-direction: column;
+}
+.registration-form__form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-form__form__item__title {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__form__item__input {
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Lato;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.registration-form__form__item__input::-webkit-input-placeholder,
+.registration-form__form__item textarea::-webkit-input-placeholder {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__form__radio {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: flex;
+  gap: 20px;
+}
+.registration-form__form__radio__label {
+  display: flex;
+  gap: 10px;
+  color: #000;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__form__text {
+  padding-top: 15px;
+  padding-bottom: 39px;
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-form__form__button {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 0.3s;
+}
+.registration-form__form__button span {
+  margin-right: 20px;
+}
+.registration-form__form__button:hover {
+  background-color: #fff;
+  color: #F16D7F;
+  border: 1px solid #A4A4A4;
+}
+.registration-form__form__button:hover path {
+  fill: #F16D7F;
+}
+.registration-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 57%;
+}
+.registration-content__title {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-content__text {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration-content__list__item1::after {
+  content: "15% off welcome offer";
+}
+.registration-content__list__item2::after {
+  content: "Free shipping, returns and exchanges on all orders";
+}
+.registration-content__list__item3::after {
+  content: "$10 off a purchase on your birthday";
+}
+.registration-content__list__item4::after {
+  content: "Early access to products";
+}
+.registration-content__list__item5::after {
+  content: "Exclusive offers & rewards";
+}
+.registration-content__list__item1, .registration-content__list__item2, .registration-content__list__item3, .registration-content__list__item4, .registration-content__list__item5 {
+  display: flex;
+  gap: 22px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
