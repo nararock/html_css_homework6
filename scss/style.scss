@@ -234,10 +234,10 @@ img {
 
 .product__board {
     margin-bottom: 48px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+
 }
 
 .button__browse {
@@ -406,6 +406,103 @@ img {
 
 .icons:hover path {
     fill: #FFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .product__board {
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .first__content {
+        gap: 19px;
+        margin-bottom: 109px;
+    }
+
+    .cover {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    .center__header {
+        padding-left: calc(50% - 352px);
+        padding-right: calc(50% - 352px);
+    }
+
+    .title__cover {
+        font-size: 44px;
+    }
+
+    .subtitle__cover {
+        font-size: 24px;
+    }
+
+    .subtitle__pink {
+        font-size: 24px;
+    }
+
+    .heading__cover {
+        margin-left: 39px;
+    }
+
+    .text__block {
+        margin-top: 58px;
+    }
+
+    .long__block {
+        margin-top: 33px;
+    }
+
+    .button__block {
+        margin-bottom: 70px;
+    }
+
+    .dark__content {
+        flex-direction: column;
+        gap: 48px;
+        padding-bottom: 64px;
+        padding-top: 48px;
+    }
+
+    .dark__text {
+        width: 65%;
+    }
+
+    .prefooter__content {
+        background-image: url(img/prefooter_fonTablet.png);
+        background-position: bottom;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding-top: 64px;
+        padding-bottom: 140px;
+    }
+
+    .prefooter__block {
+        width: 52%;
+    }
+
+    .header__block {
+        margin-bottom: 27px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 305px;
+    }
 }
 
 @import 'tabletVersion';

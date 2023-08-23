@@ -43,7 +43,6 @@ input[type="number"]::-webkit-inner-spin-button {
                 }
             }
 
-
             .form__button {
                 height: 35px;
                 width: 101px;
@@ -65,7 +64,7 @@ input[type="number"]::-webkit-inner-spin-button {
             display: flex;
             flex-direction: column;
             background-color: #F5F3F3;
-            padding: 39px 34px 42px 44px;
+            padding: 39px 44px 42px 44px;
 
             .total__subtitle {
                 margin-bottom: 12px;
@@ -190,6 +189,58 @@ input[type="number"]::-webkit-inner-spin-button {
                 text-align: center;
                 @include font(#656565, 18px, 400);
                 border: 1px solid #EAEAEA;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .basket__content {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 59px;
+
+        .basket__cards {
+            width: unset;
+            margin-bottom: 64px;
+
+            .card__item {
+                .card__description {
+                    margin: 22px 179px 62px 31px;
+
+                    .card__cross {
+                        left: 400px;
+                    }
+                }
+            }
+
+            .basket__buttons {
+
+                justify-content: center;
+                margin-top: 22px;
+                gap: 48px;
+            }
+        }
+
+        .basket__info {
+            width: unset;
+            flex-direction: row;
+            gap: 15px;
+
+
+
+
+            .form__input {
+                width: 356px;
+            }
+
+            .total {
+                margin-top: 56px;
             }
         }
     }
