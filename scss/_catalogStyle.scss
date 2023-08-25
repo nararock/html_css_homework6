@@ -165,3 +165,55 @@ summary::-webkit-details-marker {
     }
 
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .postheader {
+        padding-top: 24px;
+        padding-bottom: 46px;
+
+        &-flex {
+            flex-direction: column;
+            gap: 32px;
+        }
+    }
+
+    .filter {
+        padding-top: 26px;
+        gap: 60px;
+
+        .filter__menu {
+            margin-bottom: 32px;
+            width: unset;
+
+            .filter__heading {
+                padding-left: 0;
+
+                .filter-span {
+                    display: none;
+                }
+
+                svg {
+                    width: 37px;
+                    height: 25px;
+                }
+            }
+        }
+
+        .sort {
+            gap: 23px;
+
+            .sort__item {
+                .sort__heading {
+                    font-size: 12px;
+                    gap: 9px;
+                }
+            }
+        }
+
+    }
+
+    .pagination {
+        margin: 0 auto 64px auto;
+    }
+
+}

@@ -168,3 +168,37 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .postheader {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .registration {
+        flex-direction: column;
+        padding-top: 40px;
+
+
+        &-form {
+            width: unset;
+            margin-bottom: 40px;
+        }
+
+        &-content {
+            width: unset;
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__text {
+                font-size: 16px;
+            }
+
+            &__list {
+                font-size: 16px;
+            }
+        }
+    }
+}

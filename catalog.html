@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="./scss/style.css">
 </head>
 
@@ -47,7 +47,7 @@
         </div>
     </div>
     <div class="postheader">
-        <nav class="postheader__content center">
+        <nav class="postheader__content postheader-flex center">
             <h2 class="postheader__header">NEW ARRIVALS</h2>
             <div class="breadcrumbs">
                 <a href="#" class="breadcrumbs__link">HOME</a> /
@@ -58,8 +58,8 @@
     </div>
     <div class="filter center">
         <details class="filter__menu">
-            <summary class="filter__heading">FILTER<svg xmlns="http://www.w3.org/2000/svg" width="15" height="10"
-                    viewBox="0 0 15 10" fill="none">
+            <summary class="filter__heading"><span class="filter-span">FILTER</span><svg
+                    xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
                     <path
                         d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
                         fill="black" />
@@ -364,7 +364,7 @@
     </div>
     <div class="pagination center">
         <img class="pagination-arrow" src="img/arrow_left.svg" alt="arrow left">
-        <p class="pagination-number">1&nbsp&nbsp2&nbsp&nbsp3&nbsp&nbsp4&nbsp&nbsp5&nbsp&nbsp6&nbsp...20</p>
+        <p class="pagination-number">1 2 3 4 5 6...20</p>
         <img class="pagination-arrow" src="img/arrow_right.svg" alt="arrow right">
     </div>
     <div class="dark__content center">
@@ -472,19 +472,6 @@
             </div>
         </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                renderBullet: function (index, className) {
-                    return '<span class="' + className + '">' + (index + 1) + "</span>";
-                },
-            },
-        });
-    </script>
 </body>
 
 </html>

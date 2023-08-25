@@ -245,3 +245,89 @@ input[type="number"]::-webkit-inner-spin-button {
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .postheader__content {
+        justify-content: center;
+    }
+
+    .basket__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 39px;
+        margin-bottom: 96px;
+
+        .basket__cards {
+            width: unset;
+            gap: 30px;
+            margin-bottom: 48px;
+
+            .card__item {
+
+                img {
+                    width: 40%;
+                }
+
+                .card__description {
+                    margin: 13px 53px 38px 17px;
+                    width: 60%;
+
+                    .card__heading {
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                        width: unset;
+                    }
+
+                    .info__field {
+                        font-size: 14px;
+
+                        .price__field,
+                        .desription__field {
+                            font-size: 14px;
+                        }
+
+                        .quantity__field {
+                            gap: 15px;
+                        }
+
+                        .card__input {
+                            width: 24px;
+                            height: 15px;
+                            font-size: 10px;
+                        }
+                    }
+
+                    .card__cross {
+                        width: 9px;
+                        height: 11px;
+                        left: 170px;
+                    }
+                }
+            }
+        }
+
+        .basket__buttons {
+            gap: 9px;
+            margin-top: 0;
+
+            .basket__button {
+                width: 175px;
+                height: 33px;
+                font-size: 12px;
+            }
+        }
+
+        .basket__info {
+            width: unset;
+            gap: 48px;
+
+            .basket__form {
+                .button__get {
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+}
